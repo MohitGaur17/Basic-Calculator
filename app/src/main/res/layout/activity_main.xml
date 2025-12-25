@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F5F5F5"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Display area -->
+    <EditText
+        android:id="@+id/etInput"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="end|center_vertical"
+        android:textSize="36sp"
+        android:inputType="none"
+        android:focusable="false"
+        android:background="@android:color/transparent"
+        android:textColor="#333333"
+        android:text="0"
+        android:paddingEnd="12dp" />
+
+    <!-- Row 1 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/btnClear" android:text="C" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btnDiv" android:text="÷" style="@style/CalcButtonDark" />
+        <Button android:id="@+id/btnMul" android:text="×" style="@style/CalcButtonDark" />
+        <Button android:id="@+id/btnDel" android:text="⌫" style="@style/CalcButtonDark" />
+    </LinearLayout>
+
+    <!-- Row 2 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn7" android:text="7" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btn8" android:text="8" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btn9" android:text="9" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btnSub" android:text="−" style="@style/CalcButtonDark" />
+    </LinearLayout>
+
+    <!-- Row 3 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn4" android:text="4" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btn5" android:text="5" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btn6" android:text="6" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btnAdd" android:text="+" style="@style/CalcButtonDark" />
+    </LinearLayout>
+
+    <!-- Row 4 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn1" android:text="1" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btn2" android:text="2" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btn3" android:text="3" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btnEqual" android:text="=" style="@style/CalcButtonGreen" />
+    </LinearLayout>
+
+    <!-- Row 5 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button android:id="@+id/btn0" android:text="0" style="@style/CalcButtonLight" />
+        <Button android:id="@+id/btnDot" android:text="." style="@style/CalcButtonLight" />
+    </LinearLayout>
+
+</LinearLayout>
